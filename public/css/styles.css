@@ -1,0 +1,182 @@
+body {
+    /*font-family: Arial, sans-serif;*/
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/background.jpg') ;
+    background-size: cover;
+    /*background-position: center;
+    background-repeat: no-repeat;*/
+}
+.selectProfile {
+    margin-bottom: 5px; 
+}
+
+.selectProfile label {
+    display: block; 
+    margin-bottom: 10px; 
+    color: #FFFFFF;
+    font-size: 16px; 
+    text-align: left; 
+}
+
+.selectProfile input[type="file"] {
+    width: 100%; 
+    padding: 10px; /* Adds some padding for better touch interaction */
+    border-radius: 5px; /* Rounds the corners like other inputs */
+    border: 1px solid #dddddd; /* Matches other inputs' border style */
+    background-color: #FFFFFF; /* Or use the same hwb() color for consistency */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+}
+
+/* Optional: Style the file input to look more like a button */
+.selectProfile input[type="file"]::file-selector-button {
+    background-color: #3D639B; /* Button color */
+    color: white; /* Text color */
+    padding: 10px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    border: none; /* Removes the default border */
+    margin-right: 10px; /* Adds space between the button and the file name */
+    cursor: pointer; /* Ensures the cursor changes on hover */
+}
+
+.selectProfile input[type="file"]::file-selector-button:hover {
+    background-color: #2b4d76; /* Darker shade on hover, similar to the login button */
+}
+
+.form-container {
+    background-color: hsla(216, 46%, 40%, 0.584); 
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px #000000;
+    border-radius: 5px; 
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.input-with-icon {
+    background-image: url('../img/mail.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    padding-left: 40px; 
+}
+
+input[type="password"].input-with-icon {
+    background-image: url('../img/Vector.png'); 
+}
+
+input[type="text"].input-with-icon,
+input[type="password"].input-with-icon {
+    background-size: 12px 15px; 
+    background-position: 10px 50%; 
+}
+
+#login {
+    background-color: #3D639B; 
+    padding: 10px 20px; 
+    border: none;
+    cursor: pointer; 
+    width: 100%; 
+    margin-top: 15px; 
+    border-radius: 9px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+#login:hover {
+    background-color: #2b4d76; 
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Kaushan Script;
+    font-size: 32px;
+    text-align: center;
+
+}
+
+.form-container select {
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px solid #dddddd;
+    background-color: hwb(215 72% 16% / 0.562); 
+    padding: 10px 20px; 
+}
+
+.form-container input[type="select"],
+.form-container input[type="text"],
+.form-container input[type="password"],
+.form-container input[type="date"] {
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddd;
+    background-color: hwb(215 72% 16% / 0.562); 
+    padding: 10px 20px; 
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+a {
+    display: inline-block; /* Allows the application of padding and width */
+    /*background-color: #3D639B; /* Primary button color */
+    color: rgb(18, 18, 18); /* Text color */
+    /*padding: 10px 20px; /* Padding around the text */
+    /*border-radius: 9px; /* Rounded corners like your #login button */
+    text-decoration: none; /* Removes the underline from the link */
+    font-family: Arial, sans-serif; /* Consistent font family */
+    font-size: 15px; /* Matching font size to the form's buttons */
+    text-align: center; /* Centers the text inside the link */
+    margin-top: 15px; /* Adds space above the link */
+    /*transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+a:hover {
+    background-color: #0f0f0f; /* Darker shade for hover effect, like your #login button */
+}
+
+.error{
+    color: red;
+    font-size: 15px;
+    visibility: hidden;
+}
+.form-container.inscription input {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.form-container.inscription #login{
+    margin-top: 5px;
+}
+.form-container.inscription a{
+    margin-top: 0px;;
+}
+#loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #08080867;
+}
+#noload{
+    display:none;
+}
+#patient{
+    background-color:rgb(115, 176, 255);
+}

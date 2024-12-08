@@ -1,0 +1,184 @@
+.jockey-one-regular {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.kaushan-script-regular {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+body{
+    /*height:1210px;
+   /* background:cover url(230213-jeux-video.jpg) no-repeat;
+    */
+    height: 700px;
+    background-image: url(../img/230213-jeux-video.jpg);
+    
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+header{
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: #3D639B;
+    height: 120px;
+    width: 100%;
+}
+header nav{
+    position: absolute;
+    top:70px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+header nav a{
+    font-family:'Jockey One';
+    font-size: 36px;
+    width: 200px;
+    text-shadow:4px 4px 4px rgba(0, 0, 0, 0.25) ;
+    transition: background-color 0.5s ease;
+}
+header nav a:hover {
+    background-color: #3498db;
+  }
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#bande{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:150px;
+    width: 506px;
+    height: 70px;
+    background-color: #D9D9D9;
+    font-family: 'Kaushan Script';
+    font-size: 30px;
+}
+#bande div{
+    width: 100%;
+  height: 0px;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-right: 80px solid rgba(56, 93, 150, 0.70);
+}
+h1{
+    margin-left: 160px;
+}
+#jeux{
+    position: absolute;
+    width: 100%;
+    top:290px;
+    display: flex;
+    justify-content: space-around;
+}
+.jeu{
+    width: 300px;
+    height: 410px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px 25px 25px 25px;
+    rotate: 10deg;
+    transition: transform 0.3s ease-in-out;
+}
+.jeu:hover{
+    transform: rotateY(45deg);
+}
+.jeu img{
+    width: 300px;
+    height: 218px;
+    border-radius:25px 25px 0 0 ;
+}
+
+p{
+    width: 288px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article nav{
+    position: absolute;
+    top:150px;
+    left:55px;
+    width: 93%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #9AB8E4;
+    font-size: 36px;
+}
+#liste{
+    position: absolute;
+    top:280px;
+    left:55px;
+    height: 380px;
+    width: 1400px;
+    background-color:#9AB8E4 ;
+    font-size:36px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+}
+.meilleur{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1216px;
+    height: 60px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 40px;
+}
+#pointeur{
+    position: absolute;
+    top:240px;
+    left:196px;
+    /*width: 100%;*/
+    height: 0px;
+    border-right: 70px solid transparent;
+    border-left: 70px solid transparent;
+    border-bottom: 100px solid #9AB8E4;
+}
+#classement{
+    display: none;
+}
+.feli{
+    width: 5%;
+}
+#loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #080808ca;
+}
+#loading p{
+    width: 400px;
+    height: 60px;
+    background-color: white;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 30px;
+    border-radius: 5px;
+}
+#noload{
+    display:none;
+}

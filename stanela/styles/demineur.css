@@ -1,0 +1,189 @@
+body{
+    margin-left: 30px;
+}
+#listequiz{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.carte{
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgb(201, 196, 196);
+}
+.carte div{
+    width: 90%;
+    height: 90%;
+    border: 1.5px solid red;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 80%;
+}
+#imo{
+    width: 2%;
+    margin: 100px;
+    background-color: white;
+    padding: 2px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+#panel{
+    width: 100%;
+    height: 90%;
+}
+/*#profil{
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    height: 20px;
+    width: 150px;
+    background-color: rgb(205, 156, 255);
+    text-align: center;
+}*/
+#profil{
+    width: 150px;
+    background-color: rgb(205, 156, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: -10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+#profil img{
+    width: 30%;
+}
+footer{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+#foot{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 310px;
+    height: 90px;
+    width: 77%;
+}
+#gagner{
+    display: flex;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    width: 99%;
+    height: 87%;
+    z-index: 1;
+}
+#nogagner{
+    display: none;
+}
+#feu{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#happy{
+    position: absolute;
+    z-index: 2;
+    width: 30%;
+    height: 30%;
+}
+#woman{
+    position: absolute;
+    z-index: 2;
+    left: 20px;
+    width:25%;
+    height: 80%;
+    bottom: 0px;
+}
+#men{
+    position: absolute;
+    z-index: 2;
+    right: 30px;
+    width:30%;
+    height: 80%;
+    bottom: 0px;
+}
+#plastique{
+    position: absolute;
+    margin: auto;
+    width:25%;
+    height: 80%;
+}
+#hand{
+    position: absolute;
+    margin: auto;
+    top:150px;
+    width:25%;
+    height: 40%;
+}
+#controls {
+    display: flex;
+    gap: 10px;
+}
+
+#controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+#controls button:hover {
+    background-color: #0056b3;
+}
+#perdu{
+    position: absolute;
+    top:50px;
+    width: 50%;
+    left:410px;
+}
+#noperdu{
+    display: none;
+}
+#load{
+    width: 30%;
+}
+#chargement{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(140, 157, 233, 0.663);
+    color: white;
+    font-weight:bold;
+    
+    font-size: 40px;
+}
+
+#nochargement{
+    display: none;
+}
